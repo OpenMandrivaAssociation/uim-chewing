@@ -16,6 +16,8 @@ Patch1:		uim-chewing-latest-trunk.diff
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:		uim        >= %{uim_version}
 Requires:		libchewing >= %{chewing_version}
+# (tv) for uim-module-manager:
+BuildRequires:		uim
 BuildRequires:		libuim-devel     >= %{uim_version}
 BuildRequires:		libchewing-devel >= %{chewing_version}
 
