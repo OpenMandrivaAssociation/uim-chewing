@@ -13,7 +13,6 @@ License:	BSD-like
 URL:  		http://people.freedesktop.org/~ekato/download/
 Source0:	%{name}-%{version}.tar.bz2
 Patch1:		uim-chewing-latest-trunk.diff
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:		uim        >= %{uim_version}
 Requires:		libchewing >= %{chewing_version}
 # (tv) for uim-module-manager:
