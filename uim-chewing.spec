@@ -1,5 +1,5 @@
 %define version	0.0.2
-%define release	%mkrel 3.svn4429.1
+%define release	%mkrel 3.svn4429.2
 
 %define uim_version     1.4.0
 %define chewing_version 0.3.091
