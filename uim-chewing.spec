@@ -2,7 +2,7 @@
 %define release	%mkrel 3.svn4429.2
 
 %define uim_version     1.4.0
-%define chewing_version 0.3.091
+%define chewing_version 0.3.2
 
 Name:		uim-chewing
 Summary:	Chinese input plugin for UIM
