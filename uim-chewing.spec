@@ -12,12 +12,13 @@ License:	BSD-like
 URL:  		http://people.freedesktop.org/~ekato/download/
 Source0:	%{name}-r%{svn}.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
-Requires:		uim        >= %{uim_version}
-Requires:		libchewing >= %{chewing_version}
+Requires:	uim        >= %{uim_version}
+Requires:	libchewing >= %{chewing_version}
 # (tv) for uim-module-manager:
-BuildRequires:		uim
-BuildRequires:		libuim-devel     >= %{uim_version}
-BuildRequires:		libchewing-devel >= %{chewing_version}
+BuildRequires:	uim
+BuildRequires:	libuim-devel     >= %{uim_version}
+BuildRequires:	libchewing-devel >= %{chewing_version}
+Buildrequires:	librsvg
 
 %description
 Chinese input plugin for UIM.
