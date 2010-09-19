@@ -1,16 +1,14 @@
-%define svn 6699
-
 %define uim_version     1.4.0
 %define chewing_version 0.3.2
 
 Name:		uim-chewing
 Summary:	Chinese input plugin for UIM
-Version:	0.0.4.1
-Release:	%mkrel -c %svn 1
+Version:	0.0.4.2
+Release:	%mkrel 1
 Group:		System/Internationalization
 License:	BSD-like
 URL:  		http://people.freedesktop.org/~ekato/download/
-Source0:	%{name}-r%{svn}.tar.bz2
+Source0:	http://uim.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:	uim        >= %{uim_version}
 Requires:	libchewing >= %{chewing_version}
@@ -23,13 +21,11 @@ Buildrequires:	librsvg
 %description
 Chinese input plugin for UIM.
 
-
 %prep
-%setup -qn %{name}
+%setup -qn %{name}-%{version}
 
 %build
-./autogen.sh
-%configure2_5x --enable-maintainer-mode
+%configure2_5x
 %make
 
 %install
@@ -55,5 +51,5 @@ uim-module-manager --unregister chewing
 %defattr(-,root,root)
 %doc AUTHORS COPYING
 %{_datadir}/uim/*.scm
-%{_datadir}/uim/pixmaps/chewing.png
+%{_datadir}/uim/pixmaps/*.png
 %{_libdir}/uim/plugin/libuim*.so
