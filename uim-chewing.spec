@@ -7,7 +7,7 @@ Version:	0.0.4.2
 Release:	%mkrel 1
 Group:		System/Internationalization
 License:	BSD-like
-URL:  		http://people.freedesktop.org/~ekato/download/
+URL:  		https://people.freedesktop.org/~ekato/download/
 Source0:	http://uim.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:	uim        >= %{uim_version}
