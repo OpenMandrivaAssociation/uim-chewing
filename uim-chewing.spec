@@ -13,6 +13,11 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:	uim        >= %{uim_version}
 Requires:	libchewing >= %{chewing_version}
 # (tv) for uim-module-manager:
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	uim
 BuildRequires:	libuim-devel     >= %{uim_version}
 BuildRequires:	libchewing-devel >= %{chewing_version}
