@@ -4,7 +4,7 @@
 Name:		uim-chewing
 Summary:	Chinese input plugin for UIM
 Version:	0.0.4.2
-Release:	%mkrel 1
+Release:	2
 Group:		System/Internationalization
 License:	BSD-like
 URL:  		https://people.freedesktop.org/~ekato/download/
